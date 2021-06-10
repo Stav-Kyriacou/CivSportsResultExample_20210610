@@ -37,6 +37,11 @@ namespace CivSportsResultExample_20210610
 
             System.Console.WriteLine($"Winner game1 : {game1.GetWinnerName()}");
             System.Console.WriteLine($"{game1.TeamA.Name} scored {game1.PointsTeamA} | {game1.TeamB.Name} scored {game1.PointsTeamB}" );
+
+            TennisResult tGame1 =
+            new TennisResult("Somewhere", new DateTime(1111, 1, 1), 3, 4, 5, 4, 6, 5, p1, p2);
+
+            Console.WriteLine(tGame1.GetWinner());
         }
     }
 }
