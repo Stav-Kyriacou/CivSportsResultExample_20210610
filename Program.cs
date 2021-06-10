@@ -40,13 +40,15 @@ namespace CivSportsResultExample_20210610
 
             TennisResult tennisGame1 =
             new TennisResult("Somewhere", new DateTime(1111, 1, 1), 3, 4, 5, 4, 6, 5, p1, p2);
-
             Console.WriteLine(tennisGame1.GetWinner());
 
             GrandSlamMensResult grandSlam1 = 
             new GrandSlamMensResult("Elsewhere", new DateTime(1111, 1, 1), 3, 4, 5, 6, 7, 6, p1, p2, 1, 1, 2, 3);
-
             Console.WriteLine(grandSlam1.GetWinner());
+
+            MmaResult mmaGame =
+            new MmaResult("Over there", new DateTime(1111, 1, 1), 1, 2, 3, 4, 6, 5, p1, p2, "Death :(");
+            Console.WriteLine(mmaGame.GetWinner());
         }
     }
 }

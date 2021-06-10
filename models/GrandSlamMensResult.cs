@@ -5,10 +5,10 @@ namespace CivSportsResultExample_20210610.models
 {
     public class GrandSlamMensResult : TennisResult
     {
-        public int GamesSet4PlayerA;
-        public int GamesSet4PlayerB;
-        public int GamesSet5PlayerA;
-        public int GamesSet5PlayerB;
+        public int GamesSet4PlayerA { get; set; }
+        public int GamesSet4PlayerB { get; set; }
+        public int GamesSet5PlayerA { get; set; }
+        public int GamesSet5PlayerB { get; set; }
 
         public GrandSlamMensResult(string location, DateTime tIme, int gamesSet1PlayerA, int gamesSet1PlayerB, int gamesSet2PlayerA, int gamesSet2PlayerB, int gamesSet3PlayerA,
                                     int gamesSet3PlayerB, Player playerA, Player playerB, int gamesSet4PlayerA, int gamesSet4PlayerB, int gamesSet5PlayerA, int gamesSet5PlayerB)
