@@ -12,8 +12,8 @@ namespace CivSportsResultExample_20210610.models
         public int GamesSet3PlayerA;
         public int GamesSet3PlayerB;
 
-        Player PlayerA;
-        Player PlayerB;
+        public Player PlayerA;
+        public Player PlayerB;
 
         public TennisResult(string location, DateTime tIme, int gamesSet1PlayerA, int gamesSet1PlayerB, int gamesSet2PlayerA, int gamesSet2PlayerB, int gamesSet3PlayerA,
                             int gamesSet3PlayerB, Player playerA, Player playerB) : base(location, tIme)
@@ -28,7 +28,7 @@ namespace CivSportsResultExample_20210610.models
             this.PlayerB = playerB;
         }
 
-        public string GetWinner()
+        public virtual string GetWinner()
         {
             int scorePlayerA = 0;
             int scorePlayerB = 0;
